@@ -1,11 +1,7 @@
-<?php get_header(); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-  the_content(); // displays whatever you wrote in the wordpress editor
-  endwhile; endif; //ends the loop
- ?>
-<?php get_footer(); ?>
+<?php include 'header.php'; ?>
 
+<h1> Initial  </h1>
 
 
 <!-- END header  -->
-<?php get_footer(); ?>
+<?php include 'footer.php'; ?>
