@@ -1,0 +1,16 @@
+.nav_type-top {
+  background-color: $color__secondary;
+  color: #fff;
+  padding: 10px 0px;
+  & a {
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.nav_type-main {
+  padding: 10px 0px;
+  background-color: $color__primary;
+}

@@ -1,0 +1,28 @@
+.section__title{
+    position: relative;
+    padding: 15px 0px;
+    &::after{
+        content: "";
+        background: #eee;
+        width: 50px;
+        left: 0;
+        height: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -50px;
+
+    }
+    &::before{
+        content: "";
+    background: $color__secondary;
+    width: 50px;
+    left: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: 0px;
+
+    }
+}
