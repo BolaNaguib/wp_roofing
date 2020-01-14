@@ -53,7 +53,7 @@
 
       <div class="uk-navbar-right">
 
-        <ul class="uk-navbar-nav">
+        <ul class="uk-navbar-nav uk-visible@m">
         <?php if( have_rows('menu', 'option') ): ?>
     <?php while( have_rows('menu', 'option') ): the_row(); ?>
         <?php if( get_row_layout() == 'pages' ): ?>
@@ -65,6 +65,12 @@
 <?php endif; ?>
        
         </ul>
+        <ul class="uk-navbar-nav uk-inline  uk-hidden@m">
+  <li><a  href="#offcanvas-overlay" class=" button_type_toggle " uk-toggle="target: #offcanvas-overlay">
+      <span class="" uk-navbar-toggle-icon>
+
+      </span>
+    </a></li></ul
 
       </div>
       </div>
@@ -75,4 +81,31 @@
   <!-- END nav_type-main -->
 </nav>
 
+<!-- Off Canvas -->
+
+
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar section_theme_white">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <br>
+        <br>
+        <br>
+        <ul class="uk-nav ">
+<?php if( have_rows('menu', 'option') ): ?>
+<?php while( have_rows('menu', 'option') ): the_row(); ?>
+<?php if( get_row_layout() == 'pages' ): ?>
+  <li><a class="nav__link uk-margin-bottom" href="<?php the_sub_field('page_link'); ?>"><?php the_sub_field('title'); ?></a></li>
+<?php elseif( get_row_layout() == 'links' ):?>
+  <li><a class="nav__link uk-margin-bottom" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('text'); ?></a></li>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php endif; ?>
+
+</ul>
+
+
+      
+    </div>
+</div>
 <body>

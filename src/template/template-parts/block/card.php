@@ -33,7 +33,7 @@ $media = get_field( 'media' );
 
       </style>
       <!-- START uk-wodth-1-3 -->
-      <div class='uk-width-1-3'>
+      <div class='uk-width-1-3@m uk-width-1-1'>
           <?php if($media): ?>
         <div class="img-border">
           <img src="<?php echo $media['url'] ?>" alt="<?php echo $media['alt'] ?>" title="<?php echo $media['title'] ?>">

@@ -1,12 +1,17 @@
 .card_type-float{
+  
+@include mediaquery_size_m(){
     width: 130%;
     margin-top: 20px;
-
+}
 }
 .card_type-contactform{
     // position: relative;
     // z-index: -1;
-    padding-left: 150px;
+    @include mediaquery_size_m(){
+        padding-left: 150px;
+
+    }
     & label {
         width: 100%;
         display: inline-block;
