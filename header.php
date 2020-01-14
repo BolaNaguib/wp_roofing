@@ -30,7 +30,7 @@
   <!-- START navbar_type-top -->
   <div class='nav_type-top'>
     <!-- START uk-container -->
-    <div class='uk-container uk-flex uk-flex-right'>
+    <div class='uk-container uk-flex uk-flex-right@m uk-flex-center'>
       <ul class="uk-iconnav">
         <li><a href="tel:<?php echo $phone ;?>"> <i class="fas fa-mobile-alt"></i> <?php echo $phone_display ;?> </a></li>
       </ul>

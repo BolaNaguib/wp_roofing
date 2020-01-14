@@ -46,7 +46,7 @@ if( $posts ): ?>
             <div class='uk-width-1-2@m'>
                 <!-- START uk-text-center uk-text-left@m -->
                 <div class='uk-text-center uk-text-left@m'>
-                    <span>© 2019 Master Builders LLC.</span>
+                    <span>© 2020 Master Builders LLC.</span>
                 </div>
                 <!-- END uk-text-center uk-text-left@m -->
             </div>
