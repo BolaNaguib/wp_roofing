@@ -1,6 +1,6 @@
 <?php 
 // ACF FIELDS
-$first_color = get_field( 'first_color' );
+$first_color = get_field( 'first_color' ) ;
 $second_color = get_field( 'second_color' );
 $content = get_field( 'content' );
 $media = get_field( 'media' );
