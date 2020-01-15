@@ -34,17 +34,7 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('cta'),
         ));
-        // register cardMultiImage block
-        acf_register_block(array(
-            'name'                => 'cardMultiImage',
-            'title'                => __('cardMultiImage'),
-            'description'        => __('A custom cardMultiImage block.'),
-            'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
-            'category'            => 'formatting',
-            'icon'                => 'admin-comments',
-            'keywords'            => array('cardMultiImage'),
-        ));
+    
         // register cardgrid block
         acf_register_block(array(
             'name'                => 'cardgrid',
