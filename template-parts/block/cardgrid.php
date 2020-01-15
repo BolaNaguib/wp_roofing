@@ -15,11 +15,11 @@ $content = get_field( 'content' );
       <!-- END uk-text-center -->
     <?php endif; ?>
     <!-- START uk-grid -->
-    <div class='uk-grid ' uk-grid="uk-margin">
+    <div class='uk-grid uk-flex uk-flex-middle' uk-grid="uk-margin">
 
       <!-- START uk-width-1-2@m uk-width-1-1 -->
       <div class='uk-width-1-2@m uk-width-1-1'>
-        <div class="uk-child-width-expand@s uk-text-center" uk-grid="parallax:50">
+        <div class="uk-child-width-expand@s uk-text-center uk-grid-small" uk-grid="parallax:50">
           <?php
           // check if the repeater field has rows of data
           if (have_rows('image_column')) :
