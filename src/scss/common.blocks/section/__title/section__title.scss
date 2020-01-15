@@ -1,6 +1,9 @@
 .section__title{
     position: relative;
     padding: 15px 0px;
+    & span {
+        color: #12679b;
+    }
     &::after{
         content: "";
         background: #eee;
