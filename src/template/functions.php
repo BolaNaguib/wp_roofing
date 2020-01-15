@@ -45,6 +45,17 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('cardMultiImage'),
         ));
+        // register cardgrid block
+        acf_register_block(array(
+            'name'                => 'cardgrid',
+            'title'                => __('cardgrid'),
+            'description'        => __('A custom cardgrid block.'),
+            'render_callback'    => 'section_block_callback',
+            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+            'category'            => 'formatting',
+            'icon'                => 'admin-comments',
+            'keywords'            => array('cardgrid'),
+        ));
         // register contact block
         acf_register_block(array(
             'name'                => 'contact',

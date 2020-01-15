@@ -95,6 +95,13 @@
                 "operator": "==",
                 "value": "acf\/cardmultiimage"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cardgrid"
+            }
         ]
     ],
     "menu_order": 0,
@@ -105,5 +112,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578926589
+    "modified": 1579100020
 }
