@@ -1,3 +1,9 @@
+<?php 
+// ACF FIELDS
+$first_color = get_field( 'first_color' ) ;
+$second_color = get_field( 'second_color' );
+?>
+
 <section id="" class=" section section_theme-black">
     <div class="uk-container">
         <?php if ($first_color || $second_color) : ?>
@@ -18,7 +24,7 @@
                     $image = get_sub_field( 'review_image' );
                     ?>
                     <div class="">
-                        <div class="uk-card-header">
+                        <div class="card_type-review">
                             <a target="_blank" style="color: inherit;" href=" <?php the_sub_field('review_url') ?> ">
 
                                 <div class="uk-grid-small uk-flex-middle" uk-grid>

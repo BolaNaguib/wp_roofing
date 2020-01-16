@@ -103,3 +103,13 @@
   }
   
 }
+
+.card_type-review{
+  & a {
+    color: #fff !important;
+    & p {
+      color: #ffc600!important;
+    }
+  }
+
+}
