@@ -101,6 +101,17 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('testimonials'),
         ));
+        // register reviews block
+        acf_register_block(array(
+            'name'                => 'reviews',
+            'title'                => __('reviews'),
+            'description'        => __('A custom reviews block.'),
+            'render_callback'    => 'section_block_callback',
+            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+            'category'            => 'formatting',
+            'icon'                => 'admin-comments',
+            'keywords'            => array('reviews'),
+        ));
     }
 }
 /*********************************************

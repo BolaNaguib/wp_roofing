@@ -14,8 +14,5 @@
 
 
 
-
-
-
 <!-- END header  -->
 <?php get_footer(); ?>
