@@ -34,7 +34,7 @@ $second_color = get_field( 'second_color' );
         <div class="card_type-testimonial uk-text-center">
           <blockquote cite="#">
             <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-            <p class="uk-margin-remove"><span uk-icon="icon: quote-right;" class="uk-icon"></span> <?php echo $source_title ;?> <span uk-icon="icon: quote-right;" class="uk-icon"></span></p>
+            <p class="uk-margin-remove"><span uk-icon="icon: quote-right;" class="uk-icon"></span> <?php echo $caption ;?> <span uk-icon="icon: quote-right;" class="uk-icon"></span></p>
             <footer><?php echo $author ;?> &nbsp;&nbsp;<cite><a target="_blank" href="<?php echo $source_url; ?>"><?php echo $source_title ;?></a></cite></footer>
           </blockquote>
         </div>
