@@ -1,4 +1,8 @@
-
+<?php 
+// ACF FIELDS
+$first_color = get_field( 'first_color' ) ;
+$second_color = get_field( 'second_color' );
+?>
 
 <!-- START section -->
 <section class='section section_theme-blue'>
