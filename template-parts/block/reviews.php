@@ -71,7 +71,7 @@ $second_color = get_field( 'second_color' );
 
         <div class="uk-text-center uk-padding">
             <span style="color:#ffc600" class="rating-desc" itemscope="" itemtype="http://schema.org/Organization">
-                <span style="color:#ffc600" itemprop="name">
+                <span style="color:#fff" itemprop="name">
                     <?php if (get_field('schema_organization_name')) : ?>
                         <?php the_field('schema_organization_name') ?>
                     <?php else : ?>
