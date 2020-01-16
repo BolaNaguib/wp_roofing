@@ -24,7 +24,7 @@
                                 <div class="uk-grid-small uk-flex-middle" uk-grid>
 
                                     <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="60" height="60" src="<?php $image['url'] ?>" alt="<?php $image['alt'] ?>" title="<?php $image['title'] ?>">
+                                        <img class="uk-border-circle" width="60" height="60" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>">
                                     </div>
                                     <div class="uk-width-expand">
                                         <h4 class=" uk-margin-remove-bottom"><?php the_sub_field('review_title'); ?></h4>
