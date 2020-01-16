@@ -1,0 +1,7 @@
+.section_theme-blue{
+    background-color: $color__primary;
+    color: #fff;
+    & .section__title{
+        color: #fff;
+    }
+}

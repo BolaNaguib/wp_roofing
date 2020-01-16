@@ -34,7 +34,7 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('cta'),
         ));
-    
+
         // register cardgrid block
         acf_register_block(array(
             'name'                => 'cardgrid',
@@ -89,6 +89,17 @@ function my_acf_init()
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('hero'),
+        ));
+        // register testimonials block
+        acf_register_block(array(
+            'name'                => 'testimonials',
+            'title'                => __('testimonials'),
+            'description'        => __('A custom testimonials block.'),
+            'render_callback'    => 'section_block_callback',
+            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+            'category'            => 'formatting',
+            'icon'                => 'admin-comments',
+            'keywords'            => array('testimonials'),
         ));
     }
 }
