@@ -4,6 +4,7 @@ $first_color = get_field( 'first_color' ) ;
 $second_color = get_field( 'second_color' );
 $content = get_field( 'content' );
 $media = get_field( 'media' );
+$media_direction = get_field( 'card_direction' );
 $card_title = get_field( 'card_title' );
 $post_id =  get_the_ID();
 $city = get_field( 'city', $post_id );
@@ -37,12 +38,9 @@ $city = get_field( 'city', $post_id );
 
       </div>
       <!-- END uk-width-1-3@m uk-width-1-1 -->
-
-      <style>
-
-      </style>
+     
       <!-- START uk-wodth-1-3 -->
-      <div class='uk-width-1-3@m uk-width-1-1'>
+      <div class='uk-width-1-3@m uk-width-1-1 uk-flex-last <?php if($media_direction): ?> uk-flex-first@m <?php endif; ?>'>
           <?php if($media): ?>
         <div class="img-border">
           <img src="<?php echo $media['url'] ?>" alt="<?php echo $media['alt'] ?>" title="<?php echo $media['title'] ?>">
