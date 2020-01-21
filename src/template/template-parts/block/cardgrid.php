@@ -2,6 +2,9 @@
 $first_color = get_field('first_color');
 $second_color = get_field('second_color');
 $content = get_field( 'content' );
+$card_title = get_field( 'card_title' );
+$post_id =  get_the_ID();
+$city = get_field( 'city', $post_id );
 ?>
 <!-- START section -->
 <section class='section'>
@@ -51,6 +54,8 @@ $content = get_field( 'content' );
       <!-- START uk-width-1-2@m  -->
       <div class='uk-width-1-2@m '>
         <div class="card card_theme-white">
+        <h2 class="card__title"><?php echo $card_title ;?> <span><?php echo $city ;?></span></h2>
+
           <?php echo $content ;?>
 
         </div>

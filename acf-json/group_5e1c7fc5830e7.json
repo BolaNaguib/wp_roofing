@@ -3,6 +3,25 @@
     "title": "Block: CardMultiImage",
     "fields": [
         {
+            "key": "field_5e2761e8a7c4b",
+            "label": "Card Title",
+            "name": "card_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5e1c816541168",
             "label": "Content",
             "name": "content",
@@ -93,13 +112,6 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cardmultiimage"
-            }
-        ],
-        [
-            {
-                "param": "block",
-                "operator": "==",
                 "value": "acf\/cardgrid"
             }
         ]
@@ -112,5 +124,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579100020
+    "modified": 1579639283
 }
