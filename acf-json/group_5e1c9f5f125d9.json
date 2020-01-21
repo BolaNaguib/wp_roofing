@@ -30,7 +30,7 @@
             "key": "field_5e1c9f9081a7b",
             "label": "Hero Title",
             "name": "hero_title",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -40,10 +40,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
         },
         {
             "key": "field_5e1c9f9d81a7c",
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578934357
+    "modified": 1579639942
 }
