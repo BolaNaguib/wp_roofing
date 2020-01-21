@@ -4,7 +4,12 @@ $first_color = get_field( 'first_color' ) ;
 $second_color = get_field( 'second_color' );
 $content = get_field( 'content' );
 $media = get_field( 'media' );
-?>
+$card_title = get_field( 'card_title' );
+$post_id =  get_the_ID();
+$city = get_field( 'city', $post_id );
+ ?>
+
+
 <!-- START section -->
 <div class='section'>
   <!-- START uk-container -->
@@ -20,8 +25,12 @@ $media = get_field( 'media' );
     <div class='uk-grid uk-flex-middle' uk-grid="uk-margin">
       <!-- START uk-width-1-3@m uk-width-1-1 -->
       <div class='uk-width-2-3@m uk-width-1-1'>
+    
+
           <?php if($content): ?>
         <div class="card card_theme-white">
+        <h2 class="card__title"><?php echo $card_title ;?> <span><?php echo $city ;?></span></h2>
+
         <?php echo $content ;?>
         </div>
           <?php endif; ?>

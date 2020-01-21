@@ -3,19 +3,18 @@
 $hero_background = get_field('hero_background');
 $hero_title = get_field('hero_title');
 $hero_caption = get_field('hero_caption');
-$city = get_field( 'city' );
-
+$post_id =  get_the_ID();
+$city = get_field( 'city', $post_id );
 // ACF Fields 
 $phone_display_option = get_field( 'phone_display','option' );
-$phone_display_single = get_field( 'phone_display' );
+$phone_display_single = get_field( 'phone_display', $post_id  );
 $phone_display = $phone_display_single ? $phone_display_single : $phone_display_option  ;
 
 $phone_option = get_field( 'phone','option' );
-$phone_single = get_field( 'phone' );
+$phone_single = get_field( 'phone', $post_id  );
 $phone = $phone_single ? $phone_single : $phone_option  ;
 
 ?>
-
 <!-- Hero Section -->
 <!-- START section -->
 <section class='section_type-hero uk-position-relative uk-flex uk-flex-middle' style="background-image: url('<?php echo $hero_background['url']; ?>');
@@ -24,7 +23,7 @@ background-size:cover; height:98vh;  ">
   <div class='uk-container uk-position-relative ' style=" ">
     <!-- START uk-flex uk-flex-middle -->
     <div class='uk-text-center uk-margin-bottom'>
-      <h1 class="" style="font-size: 75px;"><?php echo $hero_title; ?> <?php echo $city ;?> </h1>
+      <h1 class="" style="font-size: 75px;">  <?php echo $hero_title; ?> <?php echo $city;?> </h1>
       <p><?php echo $hero_caption; ?></p>
       <br>
       <br>
