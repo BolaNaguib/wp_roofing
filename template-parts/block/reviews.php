@@ -6,7 +6,7 @@ $post_id =  get_the_ID();
 $city = get_field('city', $post_id);
 ?>
 
-<section id="" class=" section section_theme-black">
+<section id="" class=" section section_theme-blue">
     <div class="uk-container">
         <?php if ($first_color || $second_color) : ?>
             <!-- START uk-text-center -->
