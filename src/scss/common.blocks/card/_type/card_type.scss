@@ -62,22 +62,13 @@
   }
 }
 
-.card_type-testimonial{
+.card_type-testimonial {
   border-radius: 10px;
   color: #fff;
   & h3 {
     color: #fff;
     font-size: 42px;
     margin: 0px !important;
-    // text-shadow: 0 2px 1px rgba(0,0,0,.65);
-    // position: absolute;
-    // top: -17px;
-    // left: 25px;
-    // background-color: #12679b;
-    // padding: 0px 10px;
-    // border-radius: 5px;
-    // box-shadow: 5px 8px 30px 0 rgba(31, 35, 37, 0.08);
-
   }
   & p {
     display: -webkit-box;
@@ -91,28 +82,48 @@
   & a {
     color: $color__secondary;
   }
-  & footer{
-    // color: #fff;
+  & footer {
   }
-  & blockquote{
+  & blockquote {
     margin: 0 0 20px 0;
     font-size: 22.5px;
-        line-height: 1.5;
+    line-height: 1.5;
     font-style: italic;
     color: #fff;
   }
-  
 }
 
-.card_type-review{
+.card_type-review {
   & a {
     color: #fff !important;
     & p {
-      color: #ffc600!important;
+      color: #ffc600 !important;
     }
     & h4 {
       color: #fff !important;
     }
   }
+}
 
+.card_type-gallery {
+  position: relative;
+  box-shadow: 0px 0px 0px 3px #fff;
+  &:hover{
+    & .hover {
+      transition: 300ms;
+      transform: scale(1);
+      border-radius: 0%;
+
+    }
+  }
+  & .hover {
+    border-radius: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #ffffffd9;
+    color: #092e44;
+    transform: scale(0);
+    transition: 300ms;
+    margin: 5px;
+  }
 }

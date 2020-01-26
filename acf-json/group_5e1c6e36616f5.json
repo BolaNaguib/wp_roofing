@@ -56,6 +56,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5e2ce78ca9094",
+            "label": "Section Theme",
+            "name": "section_theme",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Blue",
+            "ui_off_text": "White"
         }
     ],
     "location": [
@@ -75,5 +94,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578924623
+    "modified": 1580001297
 }

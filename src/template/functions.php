@@ -112,6 +112,17 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('reviews'),
         ));
+        // register gallery block
+        acf_register_block(array(
+            'name'                => 'gallery',
+            'title'                => __('gallery'),
+            'description'        => __('A custom gallery block.'),
+            'render_callback'    => 'section_block_callback',
+            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+            'category'            => 'formatting',
+            'icon'                => 'admin-comments',
+            'keywords'            => array('gallery'),
+        ));
     }
 }
 /*********************************************
