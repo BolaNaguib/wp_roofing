@@ -2,6 +2,8 @@
 // ACF FIELDS
 $first_color = get_field( 'first_color' ) ;
 $second_color = get_field( 'second_color' );
+$post_id =  get_the_ID();
+$city = get_field('city', $post_id);
 ?>
 
 <section id="" class=" section section_theme-black">
@@ -30,7 +32,7 @@ $second_color = get_field( 'second_color' );
                                 <div class="uk-grid-small uk-flex-middle" uk-grid>
 
                                     <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="60" height="60" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>">
+                                        <img class="uk-border-circle" width="60" height="60" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?> | <?php echo $city ;?> " title="<?php echo $image['title'] ?> | <?php echo $city ;?> ">
                                     </div>
                                     <div class="uk-width-expand">
                                         <h4 class=" uk-margin-remove-bottom"><?php the_sub_field('review_title'); ?></h4>

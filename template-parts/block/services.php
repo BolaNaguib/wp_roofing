@@ -2,6 +2,8 @@
 // ACF FIELDS
 $first_color = get_field('first_color');
 $second_color = get_field('second_color');
+$post_id =  get_the_ID();
+$city = get_field('city', $post_id);
 
 
 ?>
@@ -42,7 +44,7 @@ $second_color = get_field('second_color');
                                         <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle card-hover"><i class="fas fa-search"></i></div>
                                     <?php endif; ?>
                                     <?php if ($thumbnail) : ?>
-                                        <img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>" title="<?php echo $thumbnail['title']; ?>">
+                                        <img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>  | <?php echo $city ;?> " title="<?php echo $thumbnail['title']; ?> | <?php echo $city ;?> ">
                                     <?php endif; ?>
                                     <?php if ($page_link) : ?>
                                     </a>

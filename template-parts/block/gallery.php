@@ -3,6 +3,8 @@
 $first_color = get_field('first_color');
 $second_color = get_field('second_color');
 $section_theme = get_field('section_theme');
+$post_id =  get_the_ID();
+$city = get_field('city', $post_id);
 ?>
 
 <!-- START section -->
@@ -37,7 +39,7 @@ $section_theme = get_field('section_theme');
                         <small> <?php echo $image_caption ;?> </small>
                         </div>
                       </div>
-                    <img src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>" title="<?php echo $image['title'] ;?>">
+                    <img src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>  | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> ">
                 </div>
                 <!-- END card_type-gallery -->
             </div>
