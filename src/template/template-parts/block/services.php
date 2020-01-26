@@ -42,7 +42,7 @@ $section_id = get_field( 'section_id' );
                             <!-- START uk-card-media-top -->
                             <div class='img-border'>
                                 <?php if ($page_link) : ?>
-                                    <a href="<?php echo $page_link; ?>">
+                                    <a href="<?php echo $page_link; ?>" uk-scroll="offset: 100">
                                         <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle card-hover"><i class="fas fa-search"></i></div>
                                     <?php endif; ?>
                                     <?php if ($thumbnail) : ?>
