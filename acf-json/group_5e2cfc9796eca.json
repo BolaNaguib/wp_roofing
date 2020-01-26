@@ -108,9 +108,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "post"
+                "value": "acf\/gallery"
             }
         ]
     ],
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1580006636
+    "modified": 1580007196
 }
