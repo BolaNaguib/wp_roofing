@@ -12,23 +12,23 @@
   }
 }
 
-.section_theme-blue_type-services {
-  & .card_type-service {
-    background-color: $color__secondary;
-    color: #fff;
-    transition: 400ms;
-    & h3 {
-      color: #fff;
-      transition: 400ms;
-    }
-    &:hover {
-      background-color: #fff;
-      transition: 400ms;
-      color: $color__primary;
-      & h3 {
-        color: $color__primary;
-        transition: 400ms;
-      }
-    }
-  }
-}
+// .section_theme-blue_type-services {
+//   & .card_type-service {
+//     background-color: $color__secondary;
+//     color: #fff;
+//     transition: 400ms;
+//     & h3 {
+//       color: #fff;
+//       transition: 400ms;
+//     }
+//     &:hover {
+//       background-color: #fff;
+//       transition: 400ms;
+//       color: $color__primary;
+//       & h3 {
+//         color: $color__primary;
+//         transition: 400ms;
+//       }
+//     }
+//   }
+// }
