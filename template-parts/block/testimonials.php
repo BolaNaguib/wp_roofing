@@ -2,10 +2,11 @@
 // ACF FIELDS
 $first_color = get_field( 'first_color' ) ;
 $second_color = get_field( 'second_color' );
+$section_id = get_field( 'section_id' );
 ?>
 
 <!-- START section -->
-<section class='section section_theme-blue'>
+<section id="<?php echo $section_id;?>" class='section section_theme-blue'>
   <!-- START uk-container -->
   <div class='uk-container'>
   <?php if($first_color || $second_color): ?>

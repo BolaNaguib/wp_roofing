@@ -5,9 +5,10 @@ $content = get_field( 'content' );
 $card_title = get_field( 'card_title' );
 $post_id =  get_the_ID();
 $city = get_field( 'city', $post_id );
+$section_id = get_field( 'section_id' );
 ?>
 <!-- START section -->
-<section class='section'>
+<section id="<?php echo $section_id;?>" class='section'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <?php if ($first_color || $second_color) : ?>

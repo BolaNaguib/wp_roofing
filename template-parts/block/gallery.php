@@ -5,10 +5,11 @@ $second_color = get_field('second_color');
 $section_theme = get_field('section_theme');
 $post_id =  get_the_ID();
 $city = get_field('city', $post_id);
+$section_id = get_field( 'section_id' );
 ?>
 
 <!-- START section -->
-<div class='section <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
+<div id="<?php echo $section_id;?>" class='section <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
     <!-- START uk-container -->
     <div class='uk-container'>
         <?php if ($first_color || $second_color) : ?>

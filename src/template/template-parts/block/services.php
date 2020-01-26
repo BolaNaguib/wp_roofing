@@ -4,12 +4,14 @@ $first_color = get_field('first_color');
 $second_color = get_field('second_color');
 $post_id =  get_the_ID();
 $city = get_field('city', $post_id);
-
-
+$section_theme = get_field( 'section_theme' );
+$section_id = get_field( 'section_id' );
+$section_id = get_field( 'section_id' );
 ?>
+
 <!-- Services Block -->
 <!-- START section -->
-<section class='section'>
+<section id="<?php echo $section_id;?>" class='section <?php if ($section_theme) : ?> section_theme-blue section_theme-blue_type-services <?php else : ?>  <?php endif; ?> '>
     <!-- START uk-container -->
     <div class='uk-container'>
         <?php if ($first_color || $second_color) : ?>
@@ -54,7 +56,9 @@ $city = get_field('city', $post_id);
                             <!-- END uk-card-media-top -->
                             <!-- START card -->
                             <div class='card'>
+                                <div class="uk-text-center">
                                 <h3><?php echo $block_title; ?></h3>
+                                </div>
                                 <p><?php echo $block_content; ?></p>
                             </div>
                             <!-- END card -->
