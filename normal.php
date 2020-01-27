@@ -1,8 +1,9 @@
 <?php /* Template Name: Normal Template */ ?>
 <!-- START header -->
 <?php get_header(); ?>
+<?php $hero_wallpaper = get_field( 'hero_wallpaper' ); ?>
 
-<section class="section section_type-normal" style="background-image: url('https://www.garagedoorasapservice.com/wp-content/uploads/2019/06/gasapbg.jpg');">
+<section class="section section_type-normal" style="background-image: url('<?php echo $hero_wallpaper['url'] ;?>');">
   <!-- START uk-container -->
   <div class='uk-container uk-position-relative'>
     <h1><?php the_title() ?></h1>
