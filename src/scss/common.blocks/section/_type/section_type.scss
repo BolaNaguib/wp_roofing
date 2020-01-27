@@ -20,8 +20,18 @@
 
 
 .section_type-cta{
-  background-color: $color__primary;
+  
   padding: 45px;
+  & h2{
+    color: $color__primary;
+  }
+  & a{
+    z-index: 1;
+    position: relative;
+    color: $color__secondary;
+
+  }
+ &.section_theme-blue{
   & h2{
     color: #fff;
   }
@@ -31,6 +41,7 @@
     color: #fff;
 
   }
+ }
 
 }
 
