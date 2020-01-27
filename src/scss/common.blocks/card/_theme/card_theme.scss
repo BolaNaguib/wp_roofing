@@ -5,8 +5,12 @@
     & .card__title span{
         color: $color__secondary;
     }
+    &  h3 {
+        color: #000;
+    }
 
 }
+
 .card_theme_primary{
     background-color: $color__primary;
     color: #fff;
