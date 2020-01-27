@@ -3,12 +3,15 @@ $first_color = get_field('first_color');
 $second_color = get_field('second_color');
 $content = get_field( 'content' );
 $card_title = get_field( 'card_title' );
+$media_direction = get_field('card_direction');
 $post_id =  get_the_ID();
 $city = get_field( 'city', $post_id );
 $section_id = get_field( 'section_id' );
+$card_theme = get_field('card_theme');
+$section_theme = get_field('section_theme');
 ?>
 <!-- START section -->
-<section id="<?php echo $section_id;?>" class='section'>
+<section id="<?php echo $section_id;?>" class='section <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <?php if ($first_color || $second_color) : ?>
@@ -22,8 +25,8 @@ $section_id = get_field( 'section_id' );
     <div class='uk-grid uk-flex uk-flex-middle' uk-grid="uk-margin">
 
       <!-- START uk-width-1-2@m uk-width-1-1 -->
-      <div class='uk-width-1-2@m uk-width-1-1'>
-        <div class="uk-child-width-expand@s uk-text-center uk-grid-small" uk-grid="parallax:50">
+      <div class='uk-width-1-2@m uk-width-1-1  uk-flex-last <?php if ($media_direction) : ?> uk-flex-first@m <?php endif; ?>'>
+        <div class="uk-child-width-expand@s uk-text-center uk-grid-small " uk-grid="parallax:50">
           <?php
           // check if the repeater field has rows of data
           if (have_rows('image_column')) :
@@ -54,7 +57,7 @@ $section_id = get_field( 'section_id' );
 
       <!-- START uk-width-1-2@m  -->
       <div class='uk-width-1-2@m '>
-        <div class="card card_theme-white">
+        <div class="card  <?php if ($card_theme) : ?> card_theme_primary <?php else : ?> card_theme-white <?php endif; ?>">
         <h2 class="card__title"><?php echo $card_title ;?> <span><?php echo $city ;?></span></h2>
 
           <?php echo $content ;?>

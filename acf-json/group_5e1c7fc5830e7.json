@@ -105,6 +105,44 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_5e2e2b15e8ed9",
+            "label": "Card Direction",
+            "name": "card_direction",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "media left",
+            "ui_off_text": "media right"
+        },
+        {
+            "key": "field_5e2e2b3ce8eda",
+            "label": "card Theme",
+            "name": "card_theme",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Blue",
+            "ui_off_text": "White"
         }
     ],
     "location": [
@@ -124,5 +162,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579639283
+    "modified": 1580084048
 }
