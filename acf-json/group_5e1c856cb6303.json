@@ -77,63 +77,6 @@
             "delay": 0
         },
         {
-            "key": "field_5e1c881b428e7",
-            "label": "Address",
-            "name": "address",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5e1c8821428e8",
-            "label": "Phone",
-            "name": "phone",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5e1c884c428e9",
-            "label": "Email",
-            "name": "email",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5e1c8852428ea",
             "label": "Info Block (copy)",
             "name": "",
@@ -242,5 +185,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578928433
+    "modified": 1580088563
 }

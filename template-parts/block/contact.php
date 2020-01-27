@@ -1,4 +1,6 @@
 <?php 
+$post_id =  get_the_ID();
+
 // ACF FIELDS
 $first_color = get_field( 'first_color' );
 $second_color = get_field( 'second_color' );
@@ -9,14 +11,13 @@ $info_title_second_color = get_field( 'info_title_second_color' );
 $info_content = get_field( 'info_content' );
 
 $phone_display_option = get_field( 'phone_display','option' );
-$phone_display_single = get_field( 'phone_display' );
+$phone_display_single = get_field( 'phone_display', $post_id );
 $phone_display = $phone_display_single ? $phone_display_single : $phone_display_option  ;
 
 $phone_option = get_field( 'phone','option' );
-$phone_single = get_field( 'phone' );
+$phone_single = get_field( 'phone', $post_id );
 $phone = $phone_single ? $phone_single : $phone_option  ;
 
-$post_id =  get_the_ID();
 $city = get_field('city', $post_id);
 $address_option = get_field( 'address', 'option' );
 $address = $city ? $city : $address_option;
@@ -59,7 +60,7 @@ $section_id = get_field( 'section_id' );
                 </div>
                 <div class="uk-width-expand">
                   <h4 class="uk-margin-remove">Address</h4>
-                  <small> <?php echo $email ;?></small>
+                  <small> <?php echo $address ;?></small>
                 </div>
               </div>
             </li>
