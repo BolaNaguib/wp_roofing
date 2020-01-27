@@ -94,6 +94,42 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5e2f382a23a60",
+            "label": "Full Width",
+            "name": "full_width",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Full Width",
+            "ui_off_text": "Normal"
+        },
+        {
+            "key": "field_5e2f38505783b",
+            "label": "Section Title (copy)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
         }
     ],
     "location": [
@@ -113,5 +149,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1580080484
+    "modified": 1580152926
 }

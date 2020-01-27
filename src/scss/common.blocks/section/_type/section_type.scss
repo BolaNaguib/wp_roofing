@@ -16,6 +16,29 @@
       color: #fff;
   }
 }
+.section_type-normal {
+  color: #fff;
+  position: relative;
+  margin-top: 89px;
+  background-position: center;
+  
+background-size:cover;
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  bottom: 0;
+  background: #05385a;
+  z-index: 0;
+  opacity: 0.9;
+}
+& *{
+    color: #fff;
+}
+}
 
 
 

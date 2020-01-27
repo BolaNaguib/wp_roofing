@@ -12,10 +12,13 @@ $cta_content = get_field( 'cta_content' );
 $section_id = get_field( 'section_id' );
 $section_theme = get_field('section_theme');
 
+$full_width = get_field( 'full_width' );
+
+
 ?>
 <!-- CTA -->
 <!-- START section -->
-<section id="<?php echo $section_id;?>" class='section_type-cta  <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
+<section id="<?php echo $section_id;?>" class='section_type-cta <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?> <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <!-- START uk-text-center -->

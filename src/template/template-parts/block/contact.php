@@ -30,10 +30,12 @@ $second_color_title = get_field('second_color_title');
 $form_shortcode = get_field('form_shortcode');
 $section_id = get_field('section_id');
 
+$full_width = get_field( 'full_width' );
+
 ?>
 <!-- contact section -->
 <!-- START section -->
-<section id="<?php echo $section_id; ?>" class='section'>
+<section id="<?php echo $section_id; ?>" class='section <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?>'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <?php if ($first_color || $second_color) : ?>

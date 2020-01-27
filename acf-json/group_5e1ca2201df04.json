@@ -136,25 +136,6 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
-        },
-        {
-            "key": "field_5e2746e63ab72",
-            "label": "xxx",
-            "name": "xxx",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -166,7 +147,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "side",
     "style": "default",
     "label_placement": "top",
@@ -174,5 +155,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579632363
+    "modified": 1580153007
 }

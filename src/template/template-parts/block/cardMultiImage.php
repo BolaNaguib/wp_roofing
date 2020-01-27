@@ -2,10 +2,11 @@
 $first_color = get_field('first_color');
 $second_color = get_field('second_color');
 $content = get_field( 'content' );
+$full_width = get_field( 'full_width' );
+
 ?>
-Test test 
 <!-- START section -->
-<section class='section'>
+<section class='section <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?>'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <?php if ($first_color || $second_color) : ?>

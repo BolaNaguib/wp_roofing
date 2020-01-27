@@ -14,10 +14,12 @@ $phone_option = get_field( 'phone','option' );
 $phone_single = get_field( 'phone', $post_id  );
 $phone = $phone_single ? $phone_single : $phone_option  ;
 
+$full_width = get_field( 'full_width' );
+
 ?>
 <!-- Hero Section -->
 <!-- START section -->
-<section class='section_type-hero uk-position-relative uk-flex uk-flex-middle' style="background-image: url('<?php echo $hero_background['url']; ?>');
+<section class='section_type-hero <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?> uk-position-relative uk-flex uk-flex-middle' style="background-image: url('<?php echo $hero_background['url']; ?>');
 background-size:cover; height:98vh;  ">
   <!-- START uk-container -->
   <div class='uk-container uk-position-relative ' style=" ">

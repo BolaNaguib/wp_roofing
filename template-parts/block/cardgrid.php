@@ -9,9 +9,11 @@ $city = get_field( 'city', $post_id );
 $section_id = get_field( 'section_id' );
 $card_theme = get_field('card_theme');
 $section_theme = get_field('section_theme');
+$full_width = get_field( 'full_width' );
+
 ?>
 <!-- START section -->
-<section id="<?php echo $section_id;?>" class='section <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
+<section id="<?php echo $section_id;?>" class='section <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?> <?php if ($section_theme) : ?> section_theme-blue <?php else : ?>  <?php endif; ?>'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <?php if ($first_color || $second_color) : ?>
