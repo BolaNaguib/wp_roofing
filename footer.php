@@ -1,48 +1,51 @@
-<?php 
+<?php
 // ACF Fields 
-$cert = get_field( 'cert', 'option' );
+$cert = get_field('cert', 'option');
 ?>
 <!-- START  -->
 <footer class='section_type-footer' style="padding-top: 75px;">
 
     <div class="uk-container">
-    
-    <img style="width:100%;" src="<?php echo $cert['url'] ;?>" alt="<?php echo $cert['alt'] ;?>" title="<?php echo $cert['title'] ;?>">
+        <div class="uk-text-center">
+            <img src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>">
+
+        </div>
         <div class="uk-margin-large">
 
             <h3 style="color:#fff;"> Cities we serve </h3>
             <hr>
-            <?php 
+            <?php
 
-$posts = get_field('cities_we_serve', 'option');
+            $posts = get_field('cities_we_serve', 'option');
 
-if( $posts ): ?>
-            <div class="uk-child-width-1-6@m uk-child-width-1-2 uk-grid" uk-grid="">
+            if ($posts) : ?>
+                <div class="uk-child-width-1-6@m uk-child-width-1-2 uk-grid" uk-grid="">
 
-    <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-        <li class="uk-margin-remove uk-first-column">
-                    <a class="footer__link footer__link_type_city uk-button-text" href="<?php echo get_permalink( $p->ID ); ?>">
-                    <?php echo get_the_title( $p->ID ); ?> </a></li>
-	<?php endforeach; ?>
-               
-
-                
+                    <?php foreach ($posts as $p) : // variable must NOT be called $post (IMPORTANT) 
+                    ?>
+                        <li class="uk-margin-remove uk-first-column">
+                            <a class="footer__link footer__link_type_city uk-button-text" href="<?php echo get_permalink($p->ID); ?>">
+                                <?php echo get_the_title($p->ID); ?> </a></li>
+                    <?php endforeach; ?>
 
 
 
-            </div>
+
+
+
+                </div>
             <?php endif; ?>
 
         </div>
 
-   <br>
-   <br>
+        <br>
+        <br>
 
     </div>
 
     <!-- START uk-container -->
     <div class='uk-container'>
-    <hr>
+        <hr>
 
         <!-- START uk-grid -->
         <div class='uk-grid' uk-grid="uk-margin">
@@ -83,7 +86,7 @@ if( $posts ): ?>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 
 
-<?php wp_footer(  ) ?>
+<?php wp_footer() ?>
 
 
 </body>
