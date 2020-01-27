@@ -73,7 +73,7 @@ $section_id = get_field( 'section_id' );
                 </div>
                 <div class="uk-width-expand">
                   <h4 class="uk-margin-remove">Phone</h4>
-                  <small> <a href="<?php echo $phone_display ;?>"><?php echo $phone ;?></a> </small>
+                  <small> <a href="<?php echo $phone;?>"><?php echo $phone_display ;?></a> </small>
                 </div>
               </div>
             </li>
