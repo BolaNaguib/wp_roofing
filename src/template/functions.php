@@ -123,6 +123,17 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('gallery'),
         ));
+        // register clients block
+        acf_register_block(array(
+            'name'                => 'clients',
+            'title'                => __('clients'),
+            'description'        => __('A custom clients block.'),
+            'render_callback'    => 'section_block_callback',
+            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+            'category'            => 'formatting',
+            'icon'                => 'admin-comments',
+            'keywords'            => array('clients'),
+        ));
     }
 }
 /*********************************************
