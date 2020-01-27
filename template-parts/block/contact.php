@@ -7,15 +7,28 @@ $second_color = get_field( 'second_color' );
 $info_title_first_color = get_field( 'info_title_first_color' );
 $info_title_second_color = get_field( 'info_title_second_color' );
 $info_content = get_field( 'info_content' );
-$address = get_field( 'address' );
-$phone = get_field( 'phone' );
-$email = get_field( 'email' );
+
+$phone_display_option = get_field( 'phone_display','option' );
+$phone_display_single = get_field( 'phone_display' );
+$phone_display = $phone_display_single ? $phone_display_single : $phone_display_option  ;
+
+$phone_option = get_field( 'phone','option' );
+$phone_single = get_field( 'phone' );
+$phone = $phone_single ? $phone_single : $phone_option  ;
+
+$post_id =  get_the_ID();
+$city = get_field('city', $post_id);
+$address_option = get_field( 'address', 'option' );
+$address = $city ? $city : $address_option;
+
+$email = get_field( 'email', 'option' );
 
 // Form Block 
 $first_color_title = get_field( 'first_color_title' );
 $second_color_title = get_field( 'second_color_title' );
 $form_shortcode = get_field( 'form_shortcode' );
 $section_id = get_field( 'section_id' );
+
 ?>
 <!-- contact section -->
 <!-- START section -->
@@ -59,7 +72,7 @@ $section_id = get_field( 'section_id' );
                 </div>
                 <div class="uk-width-expand">
                   <h4 class="uk-margin-remove">Phone</h4>
-                  <small><?php echo $phone ;?></small>
+                  <small> <a href="<?php echo $phone_display ;?>"><?php echo $phone ;?></a> </small>
                 </div>
               </div>
             </li>
