@@ -112,6 +112,9 @@
 .card_type-gallery {
   position: relative;
   box-shadow: 0px 0px 0px 3px #fff;
+  & img{
+    width: 100%;
+  }
   &:hover{
     & .hover {
       transition: 300ms;
