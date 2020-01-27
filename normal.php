@@ -1,9 +1,9 @@
 <?php /* Template Name: Normal Template */ ?>
 <!-- START header -->
 <?php get_header(); ?>
-<?php $hero_wallpaper = get_field( 'hero_wallpaper' ); ?>
+<?php $hero_wallpaper = get_field('hero_wallpaper'); ?>
 
-<section class="section section_type-normal" style="background-image: url('<?php echo $hero_wallpaper['url'] ;?>');">
+<section class="section section_type-normal" style="background-image: url('<?php echo $hero_wallpaper; ?>');">
   <!-- START uk-container -->
   <div class='uk-container uk-position-relative'>
     <h1><?php the_title() ?></h1>
@@ -11,6 +11,7 @@
   <!-- END uk-container -->
 
 </section>
+
 <!-- START section -->
 <div class='section'>
   <!-- START uk-container -->
