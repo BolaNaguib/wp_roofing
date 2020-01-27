@@ -16,7 +16,7 @@ $section_id = get_field( 'section_id' );
             </div>
             <!-- END uk-text-center -->
         <?php endif; ?>
-        <div class="uk-child-width-1-4@m uk-child-width-1-1" uk-grid>
+        <div class="uk-child-width-1-3@m uk-child-width-1-1" uk-grid>
 
             <?php
             // check if the repeater field has rows of data
@@ -27,7 +27,7 @@ $section_id = get_field( 'section_id' );
                     $image = get_sub_field( 'review_image' );
                     ?>
                     <div class="">
-                        <div class="card_type-review">
+                        <div class="card_type-review uk-flex uk-flex-center">
                             <a target="_blank" style="color: inherit;" href=" <?php the_sub_field('review_url') ?> ">
 
                                 <div class="uk-grid-small uk-flex-middle" uk-grid>
