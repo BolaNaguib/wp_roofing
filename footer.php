@@ -1,9 +1,13 @@
+<?php 
+// ACF Fields 
+$cert = get_field( 'cert', 'option' );
+?>
 <!-- START  -->
 <footer class='section_type-footer' style="padding-top: 75px;">
 
     <div class="uk-container">
-     
-
+    
+    <img style="width:100%;" src="<?php echo $cert['url'] ;?>" alt="<?php echo $cert['alt'] ;?>" title="<?php echo $cert['title'] ;?>">
         <div class="uk-margin-large">
 
             <h3 style="color:#fff;"> Cities we serve </h3>
