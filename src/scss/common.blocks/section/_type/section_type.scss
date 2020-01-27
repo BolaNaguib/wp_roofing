@@ -19,9 +19,13 @@
 .section_type-normal {
   color: #fff;
   position: relative;
-  margin-top: 89px;
+  margin-top: 77px;
   background-position: center;
   background-size: cover;
+  @include mediaquery_size_s(){
+    margin-top: 120px;
+
+  }
   &::before {
     content: "";
     position: absolute;
