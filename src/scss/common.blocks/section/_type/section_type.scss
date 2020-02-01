@@ -19,12 +19,11 @@
 .section_type-normal {
   color: #fff;
   position: relative;
-  margin-top: 77px;
+  margin-top: 120px;
   background-position: center;
   background-size: cover;
-  @include mediaquery_size_s(){
-    margin-top: 120px;
-
+  @include mediaquery_size_s() {
+    margin-top: 77px;
   }
   &::before {
     content: "";
