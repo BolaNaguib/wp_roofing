@@ -79,3 +79,32 @@
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
+.xsx {
+  background-color: rgb(9, 46, 68);
+  padding: 10px;
+  top: 52px !important;
+}
+.xsx a {
+  position: relative;
+  color: #fff !important;
+  min-height: unset !important;
+  padding: 5px 0px !important;
+  display: inline-block !important;
+  &::before {
+    content: "";
+    background: #068daf;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+      transition: all 0.5s ease-in-out 0s;
+    }
+  }
+}

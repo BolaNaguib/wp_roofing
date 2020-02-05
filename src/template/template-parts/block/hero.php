@@ -38,6 +38,7 @@ background-size:cover; height:98vh;  ">
     <!-- END uk-flex uk-flex-middle -->
   </div>
   <!-- END uk-container -->
+  <?php if (have_rows('value_propositions')) : ?>
 
   <div class="uk-visible@m" style="bottom: 30px;
     position: absolute !important;
@@ -45,109 +46,51 @@ background-size:cover; height:98vh;  ">
     <div class="uk-container">
       <!-- START uk-grid uk-child-width-1-4@m uk-child-width-1-1 -->
       <div class='uk-grid uk-child-width-1-4@m uk-child-width-1-1' uk-grid="uk-margin">
+      <?php while (have_rows('value_propositions')) : the_row(); ?>
+      <?php // ACF Fields 
+        $block_fontawesome = get_sub_field( 'block_fontawesome' );
+        $block_caption = get_sub_field( 'block_caption' );
+       ?>
         <!-- START div -->
         <div class=''>
           <!-- START card_type-values -->
           <div class='card_type-values'>
-            <h3>24/7</h3>
-            <span>Available</span>
+            <h3><?php echo $block_fontawesome ;?></h3>
+            <span><?php echo $block_caption ;?></span>
           </div>
           <!-- END card_type-values -->
         </div>
         <!-- END div -->
-
-        <!-- START div -->
-        <div class=''>
-          <!-- START card_type-values -->
-          <div class='card_type-values'>
-            <h3>5</h3>
-            <span>Star Google Rating</span>
-          </div>
-          <!-- END card_type-values -->
-        </div>
-        <!-- END div -->
-
-        <!-- START div -->
-        <div class=''>
-          <!-- START card_type-values -->
-          <div class='card_type-values'>
-            <h3>100%</h3>
-            <span>Service Guarantee</span>
-          </div>
-          <!-- END card_type-values -->
-        </div>
-        <!-- END div -->
-
-        <!-- START div -->
-        <div class=''>
-          <!-- START card_type-values -->
-          <div class='card_type-values'>
-            <h3>Free</h3>
-            <span>Quote</span>
-          </div>
-          <!-- END card_type-values -->
-        </div>
-        <!-- END div -->
-
-
-
+        <?php endwhile; ?>
       </div>
       <!-- END uk-grid uk-child-width-1-4@m uk-child-width-1-1 -->
-
-
     </div>
   </div>
+  <?php endif; ?>
 
 </section>
+<?php if (have_rows('value_propositions')) : ?>
 
 <section class="section_type-cta uk-hidden@m" >
     <div class="uk-container">
       <!-- START uk-grid uk-child-width-1-4@m uk-child-width-1-1 -->
       <div class='uk-grid uk-child-width-1-2' uk-grid="uk-margin">
+      <?php while (have_rows('value_propositions')) : the_row(); ?>
+      <?php // ACF Fields 
+        $block_fontawesome = get_sub_field( 'block_fontawesome' );
+        $block_caption = get_sub_field( 'block_caption' );
+       ?>
         <!-- START div -->
         <div class=''>
           <!-- START card_type-values -->
           <div class='card_type-values'>
-            <h3>24/7</h3>
-            <span>Available</span>
+            <h3><?php echo $block_fontawesome ;?></h3>
+            <span><?php echo $block_caption ;?></span>
           </div>
           <!-- END card_type-values -->
         </div>
         <!-- END div -->
-
-        <!-- START div -->
-        <div class=''>
-          <!-- START card_type-values -->
-          <div class='card_type-values'>
-            <h3>5</h3>
-            <span>Star Google Rating</span>
-          </div>
-          <!-- END card_type-values -->
-        </div>
-        <!-- END div -->
-
-        <!-- START div -->
-        <div class=''>
-          <!-- START card_type-values -->
-          <div class='card_type-values'>
-            <h3>100%</h3>
-            <span>Service Guarantee</span>
-          </div>
-          <!-- END card_type-values -->
-        </div>
-        <!-- END div -->
-
-        <!-- START div -->
-        <div class=''>
-          <!-- START card_type-values -->
-          <div class='card_type-values'>
-            <h3>Free</h3>
-            <span>Quote</span>
-          </div>
-          <!-- END card_type-values -->
-        </div>
-        <!-- END div -->
-
+        <?php endwhile; ?>
 
 
       </div>
@@ -156,3 +99,4 @@ background-size:cover; height:98vh;  ">
 
     </div>
   </section>
+  <?php endif; ?>
