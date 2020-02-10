@@ -25,7 +25,7 @@ background-size:cover; height:98vh;  ">
   <div class='uk-container uk-position-relative ' style=" ">
     <!-- START uk-flex uk-flex-middle -->
     <div class='uk-text-center uk-margin-bottom'>
-      <h1 class="" style="font-size: 54px;">  <?php echo $hero_title; ?> <?php echo $city;?> </h1>
+      <h1 class="">  <?php echo $hero_title; ?> <?php echo $city;?> </h1>
       <p><?php echo $hero_caption; ?></p>
       <br>
       <br>
