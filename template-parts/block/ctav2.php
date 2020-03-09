@@ -18,7 +18,7 @@ $cta_content = get_field( 'cta_content' );
 
 ?>
 <!-- START section CARD -->
-<section id="<?php echo $section_id; ?>" class='section_type-cta <?php if ($full_width) : ?> full-width<?php endif; ?>  <?php if ($section_theme) : ?> section_theme-blue <?php else : ?> section_theme-white <?php endif; ?>'>
+<section id="<?php echo $section_id; ?>" class='section_type-ctav2 <?php if ($full_width) : ?> full-width<?php endif; ?>  <?php if ($section_theme) : ?> section_theme-blue <?php else : ?> section_theme-white <?php endif; ?>'>
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-grid uk-gris-small -->
