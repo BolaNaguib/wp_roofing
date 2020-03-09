@@ -108,3 +108,14 @@
     }
   }
 }
+
+
+.scroll_button {
+  display: inline-block;
+  z-index: 9;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  bottom: 25px;
+  position: absolute;
+  width: 100%;
+}
