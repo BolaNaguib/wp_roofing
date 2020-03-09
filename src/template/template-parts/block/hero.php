@@ -20,7 +20,7 @@ $full_width = get_field( 'full_width' );
 <!-- Hero Section -->
 <!-- START section -->
 <section class='section_type-hero <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?> uk-position-relative uk-flex uk-flex-middle' style="background-image: url('<?php echo $hero_background['url']; ?>');
-background-size:cover; height:98vh;  ">
+background-size:cover;">
   <!-- START uk-container -->
   <div class='uk-container uk-position-relative ' style=" ">
     <!-- START uk-flex uk-flex-middle -->
