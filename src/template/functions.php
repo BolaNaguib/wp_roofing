@@ -34,6 +34,17 @@ function my_acf_init()
             'icon'                => 'admin-comments',
             'keywords'            => array('cta'),
         ));
+             // register ctav2 block
+             acf_register_block(array(
+                'name'                => 'ctav2',
+                'title'                => __('ctav2'),
+                'description'        => __('A custom ctav2 block.'),
+                'render_callback'    => 'section_block_callback',
+                'enqueue_script'    => get_template_directory_uri() . '/style.css',
+                'category'            => 'formatting',
+                'icon'                => 'admin-comments',
+                'keywords'            => array('ctav2'),
+            ));
 
         // register cardgrid block
         acf_register_block(array(
