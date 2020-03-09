@@ -67,7 +67,13 @@ background-size:cover;">
     </div>
   </div>
   <?php endif; ?>
-
+     <!-- START uk-text-center -->
+     <div class="uk-text-center scroll_button">
+    <a class="" href="<?php echo $scroll_to_section ;?>" uk-scroll="offset: 50">
+      <img  loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/scroll-dwn.png" alt="">
+    </a>
+  </div>
+  <!-- END uk-text-center -->
 </section>
 <?php if (have_rows('value_propositions')) : ?>
 
@@ -98,12 +104,6 @@ background-size:cover;">
 
 
     </div>
-      <!-- START uk-text-center -->
-  <div class="uk-text-center scroll_button">
-    <a class="" href="<?php echo $scroll_to_section ;?>" uk-scroll="offset: 50">
-      <img  loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/scroll-dwn.png" alt="">
-    </a>
-  </div>
-  <!-- END uk-text-center -->
+ 
   </section>
   <?php endif; ?>
