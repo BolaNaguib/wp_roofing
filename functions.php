@@ -29,22 +29,21 @@ function my_acf_init()
             'title'                => __('cta'),
             'description'        => __('A custom cta block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('cta'),
         ));
-             // register ctav2 block
-             acf_register_block(array(
-                'name'                => 'ctav2',
-                'title'                => __('ctav2'),
-                'description'        => __('A custom ctav2 block.'),
-                'render_callback'    => 'section_block_callback',
-                'enqueue_script'    => get_template_directory_uri() . '/style.css',
-                'category'            => 'formatting',
-                'icon'                => 'admin-comments',
-                'keywords'            => array('ctav2'),
-            ));
+        // register ctav2 block
+        acf_register_block(array(
+            'name'                => 'ctav2',
+            'title'                => __('ctav2'),
+            'description'        => __('A custom ctav2 block.'),
+            'render_callback'    => 'section_block_callback',
+
+            'category'            => 'formatting',
+            'icon'                => 'admin-comments',
+            'keywords'            => array('ctav2'),
+        ));
 
         // register cardgrid block
         acf_register_block(array(
@@ -52,7 +51,7 @@ function my_acf_init()
             'title'                => __('cardgrid'),
             'description'        => __('A custom cardgrid block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('cardgrid'),
@@ -63,7 +62,7 @@ function my_acf_init()
             'title'                => __('contact'),
             'description'        => __('A custom contact block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('contact'),
@@ -74,7 +73,7 @@ function my_acf_init()
             'title'                => __('services'),
             'description'        => __('A custom services block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('services'),
@@ -85,7 +84,7 @@ function my_acf_init()
             'title'                => __('map'),
             'description'        => __('A custom map block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('map'),
@@ -96,7 +95,7 @@ function my_acf_init()
             'title'                => __('Hero'),
             'description'        => __('A custom Hero block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('hero'),
@@ -107,7 +106,7 @@ function my_acf_init()
             'title'                => __('testimonials'),
             'description'        => __('A custom testimonials block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('testimonials'),
@@ -118,7 +117,7 @@ function my_acf_init()
             'title'                => __('reviews'),
             'description'        => __('A custom reviews block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('reviews'),
@@ -129,7 +128,7 @@ function my_acf_init()
             'title'                => __('gallery'),
             'description'        => __('A custom gallery block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('gallery'),
@@ -140,7 +139,7 @@ function my_acf_init()
             'title'                => __('clients'),
             'description'        => __('A custom clients block.'),
             'render_callback'    => 'section_block_callback',
-            'enqueue_script'    => get_template_directory_uri() . '/style.css',
+
             'category'            => 'formatting',
             'icon'                => 'admin-comments',
             'keywords'            => array('clients'),
