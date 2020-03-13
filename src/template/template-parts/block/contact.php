@@ -64,7 +64,7 @@ $full_width = get_field( 'full_width' );
                 </div>
                 <div class="uk-width-expand">
                   <h4 class="uk-margin-remove">Phone</h4>
-                  <small> <a href="<?php echo $phone; ?>"><?php echo $phone_display; ?></a> </small>
+                  <small> <a href="tel:<?php echo $phone; ?>"><?php echo $phone_display; ?></a> </small>
                 </div>
               </div>
             </li>

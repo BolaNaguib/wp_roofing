@@ -29,7 +29,7 @@ background-size:cover;">
       <p><?php echo $hero_caption; ?></p>
       <br>
       <br>
-      <a class="button_type-hero" href="<?php echo $phone ;?>"><?php echo $phone_display ;?></a>
+      <a class="button_type-hero" href="tel:<?php echo $phone ;?>"><?php echo $phone_display ;?></a>
     </div>
 
   
