@@ -12,7 +12,7 @@ $cert = get_field('cert', 'option');
         </div>
         <div class="uk-margin-large">
 
-            <h3 style="color:#fff;"> Cities we serve </h3>
+            <h3 class="footer_block_title" style="color:#fff;"> We Serve Cities in <a href="https://roofmasters.us/broward-county/">Broward County</a> and <a href="https://roofmasters.us/palm-beach-county/"></a>Palm Beach County </h3>
             <hr>
             <?php
 
@@ -47,38 +47,17 @@ $cert = get_field('cert', 'option');
     <div class='uk-container'>
         <hr>
 
-        <!-- START uk-grid -->
-        <div class='uk-grid' uk-grid="uk-margin">
-            <!-- START uk-width-1-2@m -->
-            <div class='uk-width-1-2@m'>
-                <!-- START uk-text-center uk-text-left@m -->
-                <div class='uk-text-center uk-text-left@m'>
-                    <span>© 2020 Master Builders LLC.</span>
-                </div>
-                <!-- END uk-text-center uk-text-left@m -->
-            </div>
-            <!-- END uk-width-1-2@m -->
-            <!-- START uk-width-1-2@m -->
-            <div class='uk-width-1-2@m'>
-                <!-- START uk-text-center uk-text-right@m -->
-                <div class="uk-text-right@m uk-text-center">
-                    Made with <i style="color:red" class="fas fa-heart"></i> By <a target="_blank" href="https://www.xvxlabs.com"> xvxlabs.com</a>
-                </div>
-                <!-- END uk-text-center uk-text-right@m -->
-            </div>
-            <!-- END uk-width-1-2@m -->
+        <!-- START uk-text-center -->
+        <div class='uk-text-center'>
+        <small> © 2020 Master Builders LLC. | Developed by <a style="color:#fff;">xvxlabs.com</a></small>
         </div>
-        <!-- END uk-grid -->
+        <!-- END uk-text-center -->
     </div>
     <!-- END uk-container -->
 </footer>
 <!-- END  -->
 
-<style>
-    .footer__link {
-        color: #fff;
-    }
-</style>
+
 
 <!-- UIkit JS -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

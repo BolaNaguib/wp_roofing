@@ -119,3 +119,10 @@
   position: absolute;
   width: 100%;
 }
+.footer__link{
+  color:  #fff;
+  &:hover{
+    color:#12679b;
+    text-decoration: none;
+  }
+}
