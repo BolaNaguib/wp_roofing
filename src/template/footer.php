@@ -19,7 +19,7 @@ $cert = get_field('cert', 'option');
             $posts = get_field('cities_we_serve', 'option');
 
             if ($posts) : ?>
-                <div class="uk-child-width-1-6@m uk-child-width-1-2 uk-grid" uk-grid="">
+                <div class="uk-child-width-1-6@m uk-child-width-1-2 uk-grid uk-grid-small" uk-grid="">
 
                     <?php foreach ($posts as $p) : // variable must NOT be called $post (IMPORTANT) 
                     ?>
