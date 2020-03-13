@@ -1,7 +1,7 @@
 <?php
 // ACF Fields 
 $cert = get_field('cert', 'option');
-?> <!-- START  --><footer class="section_type-footer" style="padding-top: 75px;"><div class="uk-container"><div class="uk-text-center"><img src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>"></div><div class="uk-margin-large"><h3 class="footer_block_title" style="color:#fff;">We Serve Cities in <a href="https://roofmasters.us/broward-county/">Broward County</a> and <a href="https://roofmasters.us/palm-beach-county/"></a>Palm Beach County</h3><hr> <?php
+?> <!-- START  --><footer class="section_type-footer" style="padding-top: 75px;"><div class="uk-container"><div class="uk-text-center"><img src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>"></div><div class="uk-margin-large"><h3 class="footer_block_title" style="color:#fff;">We Serve Cities in <a href="https://roofmasters.us/broward-county/">Broward County</a> and <a href="https://roofmasters.us/palm-beach-county/">Palm Beach County</a></h3><hr> <?php
 
             $posts = get_field('cities_we_serve', 'option');
 
