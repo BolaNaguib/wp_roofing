@@ -76,7 +76,7 @@ html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
                     <?php endif; ?>
                   </li>
                 <?php elseif (get_row_layout() == 'links') : ?>
-                  <li><a class="nav__link" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('text'); ?></a></li>
+                  <li><a class="nav__link" href="<?php the_sub_field('link'); ?>"  uk-scroll="offset: 50"><?php the_sub_field('text'); ?></a></li>
                 <?php endif; ?>
               <?php endwhile; ?>
             <?php endif; ?>

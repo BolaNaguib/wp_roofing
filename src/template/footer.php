@@ -3,7 +3,7 @@
 $cert = get_field('cert', 'option');
 ?>
 <!-- START  -->
-<footer class='section_type-footer' style="padding-top: 75px;">
+<footer id="areas" class='section_type-footer' style="padding-top: 75px;">
 
     <div class="uk-container">
         <div class="uk-text-center">
