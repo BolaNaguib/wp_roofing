@@ -62,7 +62,7 @@ html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
                   <li><a class="nav__link" href="<?php the_sub_field('page_link'); ?>"><?php the_sub_field('title'); ?></a>
                     <?php if (have_rows('sub_menu')) : ?>
                    
-                      <div class="uk-navbar-dropdown xsx">
+                      <div class="uk-navbar-dropdown xsx  uk-width-medium ">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                           <?php while (have_rows('sub_menu')) : the_row(); ?>
                           <?php // ACF FIELDS 

@@ -12,7 +12,7 @@ $cert = get_field('cert', 'option');
         </div>
         <div class="uk-margin-large">
 
-            <h3 class="footer_block_title" style="color:#fff;"> We Serve Cities in <a href="https://roofmasters.us/broward-county/">Broward County</a> and <a href="https://roofmasters.us/palm-beach-county/">Palm Beach County</a> </h3>
+            <h3 class="footer_block_title" style="color:#fff;">Cities We Serve in <a href="https://roofmasters.us/broward-county/">Broward County</a> and <a href="https://roofmasters.us/palm-beach-county/">Palm Beach County</a> </h3>
             <hr>
             <?php
 
