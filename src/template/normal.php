@@ -13,7 +13,7 @@
 </section>
 
 <!-- START section -->
-<div class='section'>
+<div class='' style="padding-top: 75px;">
   <!-- START uk-container -->
   <div class='uk-container'>
 
