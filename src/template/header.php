@@ -60,7 +60,7 @@ $phone = $phone_single ? $phone_single : $phone_option  ;
       <div class="uk-navbar" uk-navbar>
         <div class="uk-navbar-left">
           <a href="/">
-            <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
+            <img loading="lazy" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
           </a>
 
         </div>

@@ -13,6 +13,6 @@ $full_width = get_field( 'full_width' );
                 if (have_rows('column')) :
                   // loop through the rows of data
                   while (have_rows('column')) : the_row(); 
-                  $image = get_sub_field( 'image' );?> <div class="img-border uk-margin-bottom"><img src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>" title="<?php echo $image['title'] ;?>"></div> <?php endwhile;
+                  $image = get_sub_field( 'image' );?> <div class="img-border uk-margin-bottom"><img loading="lazy" src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>" title="<?php echo $image['title'] ;?>"></div> <?php endwhile;
                 else :  endif; ?> </div> <?php endwhile;
           else :  endif; ?> </div></div><!-- END uk-width-1-2@m uk-width-1-1 --><!-- START uk-width-1-2@m  --><div class="uk-width-1-2@m"><div class="card card_theme-white"> <?php echo $content ;?> </div></div></div><!-- END uk-width-1-2@m  --></div><!-- END uk-grid --><!-- END uk-container --></section><!-- END section -->

@@ -13,7 +13,7 @@ $full_width = get_field('full_width');
                         // loop through the rows of data
                         while (have_rows('clients')) : the_row();
                             $image = get_sub_field('image');
-                    ?> <li><!-- START card --><div class="card_type-clients"> <?php echo $image['url']; ?> <img src=" <?php echo $image['url']; ?>" alt=" <?php echo $image['alt']; ?>" title=" <?php echo $image['title']; ?>"></div><!-- END card --></li> <?php endwhile;
+                    ?> <li><!-- START card --><div class="card_type-clients"> <?php echo $image['url']; ?> <img loading="lazy" src=" <?php echo $image['url']; ?>" alt=" <?php echo $image['alt']; ?>" title=" <?php echo $image['title']; ?>"></div><!-- END card --></li> <?php endwhile;
 
                     else :
 

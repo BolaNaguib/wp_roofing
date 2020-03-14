@@ -52,7 +52,7 @@ $full_width = get_field( 'full_width' );
                                                 <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle card-hover"><i class="fas fa-search"></i></div>
                                             <?php endif; ?>
                                             <?php if ($thumbnail) : ?>
-                                                <img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>  | <?php echo $city; ?> " title="<?php echo $thumbnail['title']; ?> | <?php echo $city; ?> ">
+                                                <img loading="lazy" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>  | <?php echo $city; ?> " title="<?php echo $thumbnail['title']; ?> | <?php echo $city; ?> ">
                                             <?php endif; ?>
                                             <?php if ($page_link) : ?>
                                             </a>

@@ -43,7 +43,7 @@ $full_width = get_field( 'full_width' );
                   while (have_rows('column')) : the_row(); 
                   $image = get_sub_field( 'image' );?>
                     <div class="img-border uk-margin-bottom">
-                      <img src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>  | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> ">
+                      <img loading="lazy" src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>  | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> ">
                     </div>
                 <?php endwhile;
                 else :  endif; ?>

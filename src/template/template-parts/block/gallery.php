@@ -42,7 +42,7 @@ $full_width = get_field( 'full_width' );
                         <small> <?php echo $image_caption ;?> </small>
                         </div>
                       </div>
-                    <img src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>  | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> ">
+                    <img loading="lazy" src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?>  | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> ">
                 </div>
                 <!-- END card_type-gallery -->
             </div>

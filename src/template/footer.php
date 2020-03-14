@@ -7,7 +7,7 @@ $cert = get_field('cert', 'option');
 
     <div class="uk-container">
         <div class="uk-text-center">
-            <img src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>">
+            <img loading="lazy" src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>">
 
         </div>
         <div class="uk-margin-large">
@@ -37,16 +37,11 @@ $cert = get_field('cert', 'option');
             <?php endif; ?>
 
         </div>
-
         <br>
-        <br>
-
     </div>
 
     <!-- START uk-container -->
     <div class='uk-container'>
-        <hr>
-
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
         <small> © 2020 Master Builders LLC. | Developed by <a style="color:#fff;">xvxlabs.com</a></small>
@@ -60,7 +55,7 @@ $cert = get_field('cert', 'option');
 
 
 <!-- UIkit JS -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 

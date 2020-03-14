@@ -20,6 +20,6 @@ $full_width = get_field( 'full_width' );
                 if (have_rows('column')) :
                   // loop through the rows of data
                   while (have_rows('column')) : the_row(); 
-                  $image = get_sub_field( 'image' );?> <div class="img-border uk-margin-bottom"><img src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?> | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> "></div> <?php endwhile;
+                  $image = get_sub_field( 'image' );?> <div class="img-border uk-margin-bottom"><img loading="lazy" src="<?php echo $image['url'] ;?>" alt="<?php echo $image['alt'] ;?> | <?php echo $city ;?> " title="<?php echo $image['title'] ;?> | <?php echo $city ;?> "></div> <?php endwhile;
                 else :  endif; ?> </div> <?php endwhile;
           else :  endif; ?> </div></div><!-- END uk-width-1-2@m uk-width-1-1 --><!-- START uk-width-1-2@m  --><div class="uk-width-1-2@m"><div class="card <?php if ($card_theme) : ?> card_theme_primary <?php else : ?> card_theme-white <?php endif; ?>"><h2 class="card__title"><?php echo $card_title ;?> <span><?php echo $city ;?></span></h2> <?php echo $content ;?> </div></div></div><!-- END uk-width-1-2@m  --></div><!-- END uk-grid --><!-- END uk-container --></section><!-- END section -->
