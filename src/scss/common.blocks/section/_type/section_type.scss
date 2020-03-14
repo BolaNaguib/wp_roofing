@@ -1,6 +1,9 @@
 .section_type-hero {
   color: #fff;
-  height: 84vh;
+  height: 100vh;
+  @include mediaquery_size_m() {
+    height: 84vh;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -17,7 +20,7 @@
     color: #fff;
   }
   & h1 {
-    font-size: 26px;
+    font-size: 22px;
 
     @include mediaquery_size_m() {
       font-size: 54px;

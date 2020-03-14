@@ -69,8 +69,8 @@ background-size:cover;">
   <?php endif; ?>
      <!-- START uk-text-center -->
      <div class="uk-text-center scroll_button">
-    <a class="" href="<?php echo $scroll_to_section ;?>" uk-scroll="offset: 50">
-      <img loading="lazy"  loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/scroll-dwn.png" alt="">
+    <a class="" href="#quote" uk-scroll="offset: 50">
+      <img  src="<?php echo get_template_directory_uri(); ?>/images/scroll-dwn.png" alt="">
     </a>
   </div>
   <!-- END uk-text-center -->
