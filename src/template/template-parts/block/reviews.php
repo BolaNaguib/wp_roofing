@@ -1,15 +1,15 @@
-<?php 
+<?php
 // ACF FIELDS
-$first_color = get_field( 'first_color' ) ;
-$second_color = get_field( 'second_color' );
+$first_color = get_field('first_color');
+$second_color = get_field('second_color');
 $post_id =  get_the_ID();
 $city = get_field('city', $post_id);
-$section_id = get_field( 'section_id' );
-$full_width = get_field( 'full_width' );
+$section_id = get_field('section_id');
+$full_width = get_field('full_width');
 
 ?>
 
-<section id="<?php echo $section_id;?>" class=" section <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?> section_theme-blue">
+<section id="<?php echo $section_id; ?>" class=" section <?php if ($full_width) : ?> full-width <?php else : ?> <?php endif; ?> section_theme-blue">
     <div class="uk-container">
         <?php if ($first_color || $second_color) : ?>
             <!-- START uk-text-center -->
@@ -25,8 +25,8 @@ $full_width = get_field( 'full_width' );
             if (have_rows('review')) :
                 // loop through the rows of data
                 while (have_rows('review')) : the_row(); ?>
-                    <?php 
-                    $image = get_sub_field( 'review_image' );
+                    <?php
+                    $image = get_sub_field('review_image');
                     ?>
                     <div class="">
                         <div class="card_type-review uk-flex uk-flex-center">
@@ -35,7 +35,7 @@ $full_width = get_field( 'full_width' );
                                 <div class="uk-grid-small uk-flex-middle" uk-grid>
 
                                     <div class="uk-width-auto">
-                                        <img class="" width="60" height="60" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?> | <?php echo $city ;?> " title="<?php echo $image['title'] ?> | <?php echo $city ;?> ">
+                                        <img class="" width="60" height="60" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?> | <?php echo $city; ?> " title="<?php echo $image['title'] ?> | <?php echo $city; ?> ">
                                     </div>
                                     <div class="uk-width-expand">
                                         <h4 class=" uk-margin-remove-bottom"><?php the_sub_field('review_title'); ?></h4>
@@ -73,7 +73,7 @@ $full_width = get_field( 'full_width' );
 
 
         </div>
-
+<!-- 
         <div class="uk-text-center uk-padding">
             <span style="color:#ffc600" class="rating-desc" itemscope="" itemtype="http://schema.org/Organization">
                 <span style="color:#fff" itemprop="name">
@@ -110,5 +110,7 @@ $full_width = get_field( 'full_width' );
                 </span>
             </span>
         </div>
+     -->
+    
     </div>
 </section>
