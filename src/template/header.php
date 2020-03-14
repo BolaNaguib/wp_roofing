@@ -21,9 +21,21 @@ html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
   <?php the_field('header_js_general', 'option');
   the_field('header_js');
   wp_head();
-  $phone_display =  get_field('phone_display', 'option');
-  $phone =  get_field('phone', 'option');
+  
+  $post_id =  get_the_ID();
+$city = get_field( 'city', $post_id );
+// ACF Fields 
+$phone_display_option = get_field( 'phone_display','option' );
+$phone_display_single = get_field( 'phone_display', $post_id  );
+$phone_display = $phone_display_single ? $phone_display_single : $phone_display_option  ;
+
+$phone_option = get_field( 'phone','option' );
+$phone_single = get_field( 'phone', $post_id  );
+$phone = $phone_single ? $phone_single : $phone_option  ;
+
   $logo = get_field('logo', 'option'); ?>
+
+  
 </head>
 <!-- END head -->
 <!-- START body -->
