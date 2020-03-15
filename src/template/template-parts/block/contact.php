@@ -30,12 +30,15 @@ $second_color_title = get_field('second_color_title');
 $form_shortcode = get_field('form_shortcode');
 $section_id = get_field('section_id');
 
-$full_width = get_field( 'full_width' );
-
+$full_width = get_field('full_width');
+$facebook = get_field('facebook', 'options');
+$twitter = get_field('twitter', 'options');
+$instagram = get_field('instagram', 'options');
+$youtube = get_field('youtube', 'options');
 ?>
 <!-- contact section -->
 <!-- START section -->
-<section id="<?php echo $section_id; ?>" class='section <?php if($full_width): ?> full-width <?php else: ?> <?php endif; ?>'>
+<section id="<?php echo $section_id; ?>" class='section <?php if ($full_width) : ?> full-width <?php else : ?> <?php endif; ?>'>
   <!-- START uk-container -->
   <div class='uk-container'>
     <?php if ($first_color || $second_color) : ?>
@@ -95,31 +98,16 @@ $full_width = get_field( 'full_width' );
             </li>
           </ul>
           <hr>
+    
           <div class="uk-flex uk-flex-center">
-          <ul class="uk-iconnav">
-            <li>
-              <a href="">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
+            <ul class="uk-iconnav">
+            <?php if ($facebook) : ?><li><a href="<?php echo $facebook; ?>"><i class="fab fa-facebook-square"></i></a></li><?php endif; ?>
+            <?php if ($twitter) : ?><li><a href="<?php echo $twitter; ?>"><i class="fab fa-twitter-square"></a></li><?php endif; ?>
+            <?php if ($instagram) : ?><li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li><?php endif; ?>
+            <?php if ($youtube) : ?><li><a href="<?php echo $youtube; ?>"><i class="fab fa-youtube"></i></a></li><?php endif; ?>
+            </ul>
           </div>
-      
+
 
         </div>
       </div>
