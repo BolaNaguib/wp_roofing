@@ -98,8 +98,8 @@
               <button class="button_type_toggle" type="button">
                 <span class="" uk-navbar-toggle-icon></span></button>
               <!-- <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div> -->
-              <div class="navbar_type-dropdown" uk-dropdown="mode: click;pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
-                <ul class="uk-nav ">
+              <div class="navbar_type-dropdown" style="display:none;" uk-dropdown="mode: click;pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                <ul class="uk-nav uk-nav-parent-icon">
                   <?php if (have_rows('menu', 'option')) : ?>
                     <?php while (have_rows('menu', 'option')) : the_row(); ?>
                       <?php if (get_row_layout() == 'pages') :
