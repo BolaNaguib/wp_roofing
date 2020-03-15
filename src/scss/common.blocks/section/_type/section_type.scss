@@ -3,7 +3,7 @@
   height: 100vh;
   @include mediaquery_size_m() {
     height: 84vh;
-    min-height: 670px;
+    min-height: 720px;
   }
 
   &::before {
