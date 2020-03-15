@@ -959,7 +959,7 @@
   <!-- END navbar_type-top -->
 
   <!-- START nav_type-main -->
-  <div class='nav_type-main'>
+  <div class='nav_type-main boundary-align'>
     <!-- START uk-container -->
     <div class='uk-container'>
       <div class="uk-navbar" uk-navbar>
