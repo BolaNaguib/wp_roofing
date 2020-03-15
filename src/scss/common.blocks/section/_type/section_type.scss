@@ -3,12 +3,9 @@
   height: 100vh;
   @include mediaquery_size_m() {
     height: 84vh;
-    margin-top: 50px;
+    min-height: 670px;
   }
-  @include mediaquery_size_l() {
-    height: 84vh;
-    margin-top: unset;
-  }
+
   &::before {
     content: "";
     position: absolute;
