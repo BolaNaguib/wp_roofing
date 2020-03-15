@@ -102,8 +102,11 @@
                 <ul class="uk-nav ">
                   <?php if (have_rows('menu', 'option')) : ?>
                     <?php while (have_rows('menu', 'option')) : the_row(); ?>
-                      <?php if (get_row_layout() == 'pages') : ?>
-                        <li><a class="<?php if (have_rows('sub_menu')) : ?>uk-parent <?php endif; ?> nav__link uk-margin-bottom" href="<?php the_sub_field('page_link'); ?>"><?php the_sub_field('title'); ?></a>
+                      <?php if (get_row_layout() == 'pages') :
+                        $page_link = get_sub_field('page_link');
+                        $title = get_sub_field('title');
+                         ?>
+                        <li><a class="<?php if (have_rows('sub_menu')) : ?>uk-parent <?php endif; ?> nav__link uk-margin-bottom" href="<?php echo $page_link; ?>"><?php echo $title; ?></a>
                           <?php if (have_rows('sub_menu')) : ?>
                             <ul class="uk-nav-sub">
                               <?php while (have_rows('sub_menu')) : the_row(); ?>
