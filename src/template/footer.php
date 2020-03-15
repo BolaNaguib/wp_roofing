@@ -34,6 +34,7 @@ $cert = get_field('cert', 'option');
             <?php endif; ?>
 
         </div>
+        <hr>
         <div class="uk-text-center">
             <img loading="lazy" src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>">
 
@@ -44,8 +45,8 @@ $cert = get_field('cert', 'option');
     <div class='uk-container'>
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
-            <small> Roof Masters is a subsidiary of Build Masters, LC </small>
-        <small> © 2020 Build Masters, LC || Developed by <a href="https://xvxlabs.com" target="_blank" style="color:#fff;">xvxlabs.com</a></small>
+            <small> Roof Masters is a subsidiary of Build Masters, LC </small><br />
+        <small> © 2020 Build Masters, LC | Developed by <a href="https://xvxlabs.com" target="_blank" style="color:#fff;">xvxlabs.com</a></small>
         </div>
         <!-- END uk-text-center -->
     </div>
