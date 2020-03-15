@@ -6,10 +6,7 @@ $cert = get_field('cert', 'option');
 <footer id="areas" class='section_type-footer' style="padding-top: 75px;">
 
     <div class="uk-container">
-        <div class="uk-text-center">
-            <img loading="lazy" src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>">
 
-        </div>
         <div class="uk-margin-large">
 
             <h3 class="footer_block_title" style="color:#fff;">We Service All Of <a href="https://roofmasters.us/palm-beach-county/">Palm Beach County</a> and <a href="https://roofmasters.us/broward-county/">Broward County</a>, Florida  </h3>
@@ -37,14 +34,18 @@ $cert = get_field('cert', 'option');
             <?php endif; ?>
 
         </div>
-        <br>
+        <div class="uk-text-center">
+            <img loading="lazy" src="<?php echo $cert['url']; ?>" alt="<?php echo $cert['alt']; ?>" title="<?php echo $cert['title']; ?>">
+
+        </div>
     </div>
 
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
-        <small> © 2020 Master Builders LLC. | Developed by <a style="color:#fff;">xvxlabs.com</a></small>
+            <small> Roof Masters is a subsidiary of Build Masters, LC </small>
+        <small> © 2020 Build Masters, LC || Developed by <a href="https://xvxlabs.com" target="_blank" style="color:#fff;">xvxlabs.com</a></small>
         </div>
         <!-- END uk-text-center -->
     </div>
