@@ -110,7 +110,6 @@
   }
 }
 
-
 .scroll_button {
   display: inline-block;
   z-index: 9;
@@ -120,14 +119,28 @@
   position: absolute;
   width: 100%;
 }
-.footer__link{
-  color:  #fff;
-  &:hover{
-    color:#12679b;
+.footer__link {
+  color: #fff;
+  &:hover {
+    color: #12679b;
     text-decoration: none;
   }
-  &::before{
+  &::before {
     content: "";
     background: #12679b;
+  }
+}
+body {
+  overflow: overlay;
+}
+.footer_block_title {
+  & a {
+    color: $color__secondary;
+    transition: 300ms;
+    &:hover {
+      color: #fff;
+      transition: 300ms;
+      text-decoration: none;
+    }
   }
 }
