@@ -43,7 +43,7 @@
     <!-- START uk-container -->
     <div class='uk-container uk-flex uk-flex-right@m uk-flex-center'>
       <ul class="uk-iconnav">
-        <li><a href="tel:<?php echo $phone; ?>"> <i class="fas fa-mobile-alt"></i> <?php echo $phone_display; ?> </a></li>
+        <li><a href="tel:<?php echo $phone; ?>"> <i class="fas fa-phone-alt"></i> <?php echo $phone_display; ?> </a></li>
       </ul>
     </div>
     <!-- END uk-container -->
@@ -105,7 +105,7 @@
                       <?php if (get_row_layout() == 'pages') :
                         $page_link = get_sub_field('page_link');
                         $title = get_sub_field('title');
-                         ?>
+                      ?>
                         <li><a class="<?php if (have_rows('sub_menu')) : ?>uk-parent <?php endif; ?> nav__link uk-margin-bottom" href="<?php echo $page_link; ?>"><?php echo $title; ?></a>
                           <?php if (have_rows('sub_menu')) : ?>
                             <ul class="uk-nav-sub">

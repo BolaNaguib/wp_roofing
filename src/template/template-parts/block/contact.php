@@ -62,7 +62,7 @@ $youtube = get_field('youtube', 'options');
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto uk-text-center">
                   <h4 class="uk-margin-remove">
-                    <i class="fas fa-mobile-alt"></i> </h4>
+                    <i class="fas fa-phone-alt"></i> </h4>
 
                 </div>
                 <div class="uk-width-expand">
@@ -98,13 +98,13 @@ $youtube = get_field('youtube', 'options');
             </li>
           </ul>
           <hr>
-    
+
           <div class="uk-flex uk-flex-center">
             <ul class="uk-iconnav">
-            <?php if ($facebook) : ?><li><a href="<?php echo $facebook; ?>"><i class="fab fa-facebook-square"></i></a></li><?php endif; ?>
-            <?php if ($twitter) : ?><li><a href="<?php echo $twitter; ?>"><i class="fab fa-twitter-square"></a></li><?php endif; ?>
-            <?php if ($instagram) : ?><li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li><?php endif; ?>
-            <?php if ($youtube) : ?><li><a href="<?php echo $youtube; ?>"><i class="fab fa-youtube"></i></a></li><?php endif; ?>
+              <?php if ($facebook) : ?><li><a href="<?php echo $facebook; ?>"><i class="fab fa-facebook-square"></i></a></li><?php endif; ?>
+              <?php if ($twitter) : ?><li><a href="<?php echo $twitter; ?>"><i class="fab fa-twitter-square"></a></li><?php endif; ?>
+              <?php if ($instagram) : ?><li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li><?php endif; ?>
+              <?php if ($youtube) : ?><li><a href="<?php echo $youtube; ?>"><i class="fab fa-youtube"></i></a></li><?php endif; ?>
             </ul>
           </div>
 
