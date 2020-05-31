@@ -9,7 +9,7 @@ $cert = get_field('cert', 'option');
 
         <div class="uk-margin-large">
 
-            <h3 class="footer_block_title" style="color:#fff;">We Service <a href="https://roofmasters.us/palm-beach-county/">Palm Beach County</a> and <a href="https://roofmasters.us/broward-county/">Broward County</a>, Florida  </h3>
+            <h3 class="footer_block_title" style="color:#fff;">We Service <a href="https://roofmasters.us/palm-beach-county/">Palm Beach County</a> and <a href="https://roofmasters.us/broward-county/">Broward County</a>, Florida </h3>
             <hr>
             <?php
 
@@ -46,7 +46,7 @@ $cert = get_field('cert', 'option');
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
             <small> Roof Masters is a subsidiary of Build Masters, LC | (CCC 1327296) </small><br />
-        <small> © 2020 Build Masters, LC | Developed by <a href="https://xvxlabs.com" target="_blank" style="color:#fff;">xvxlabs.com</a></small>
+            <small> © 2020 Build Masters, LC | Developed by <a href="https://xvxlabs.com" target="_blank" style="color:#fff;">xvxlabs.com</a></small>
         </div>
         <!-- END uk-text-center -->
     </div>
@@ -54,6 +54,19 @@ $cert = get_field('cert', 'option');
 </footer>
 <!-- END  -->
 
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
 
 
 <!-- UIkit JS -->
