@@ -6,8 +6,11 @@ function add_enqueue_styles()
     wp_enqueue_style('font_awesome',  'https://use.fontawesome.com/releases/v5.8.1/css/all.css');
     wp_enqueue_style('google_font',  'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
     wp_enqueue_style('theme_style',  get_template_directory_uri() . '/style.css', 1);
+    wp_enqueue_script('uikit_jquery', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js', array(), false, true);
     wp_enqueue_script('uikit_js', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js', array(), false, true);
+    wp_enqueue_script('uikit_js_icons', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js', array(), false, true);
 }
+
 
 
 add_action('wp_enqueue_scripts', 'add_enqueue_styles', 1);
