@@ -7,11 +7,6 @@
   <title> <?php the_field('meta_title'); ?> </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <meta name="title" content=" <?php the_field('meta_title'); ?> " />
   <meta name="keywords" content=" <?php the_field('meta_keywords'); ?> " />
   <meta name="description" content=" <?php the_field('meta_description'); ?> " />
