@@ -1,14 +1,13 @@
 .nav_type-top {
-  background-color: $color__secondary;
-  color: #fff;
+  background-color: $color__secondary !important;
+  color: #fff !important;
   padding: 10px 0px;
   & a {
     color: inherit;
     font-size: 32px;
 
-    @include mediaquery_size_m(){
+    @include mediaquery_size_m() {
       font-size: 16px;
-
     }
     &:hover {
       color: inherit;
@@ -18,12 +17,11 @@
 
 .nav_type-main {
   padding: 10px 0px;
-  background-color: $color__primary;
+  background-color: $color__primary !important;
 }
 
-
 .navbar_type-dropdown {
-    background-color: $color__primary !important;
-    margin-top: 0px  !important;
-    border-top: 1px solid $color__secondary !important;
+  background-color: $color__primary !important;
+  margin-top: 0px !important;
+  border-top: 1px solid $color__secondary !important;
 }
