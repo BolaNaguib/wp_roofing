@@ -120,9 +120,9 @@
   width: 100%;
 }
 .footer__link {
-  color: #fff;
+  color: #fff !important;
   &:hover {
-    color: #12679b;
+    color: #12679b !important;
     text-decoration: none;
   }
   &::before {
