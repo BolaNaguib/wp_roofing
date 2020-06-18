@@ -3,6 +3,22 @@
     "title": "Theme Settings",
     "fields": [
         {
+            "key": "field_5e6e5f7f13c32",
+            "label": "General",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5e1c7948ec06b",
             "label": "Phone Display",
             "name": "phone_display",
@@ -41,6 +57,60 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_5e2e3c10a6d00",
+            "label": "Address",
+            "name": "address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e2e3c16a6d01",
+            "label": "Email",
+            "name": "email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e6e5f6413c31",
+            "label": "SChema",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_5e208a6ba4612",
@@ -176,9 +246,25 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e2e3c10a6d00",
-            "label": "Address",
-            "name": "address",
+            "key": "field_5e6e5f4813c30",
+            "label": "Social Links",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e6e5f2b13c2c",
+            "label": "facebook",
+            "name": "facebook",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -195,9 +281,47 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e2e3c16a6d01",
-            "label": "Email",
-            "name": "email",
+            "key": "field_5e6e5f3613c2d",
+            "label": "twitter",
+            "name": "twitter",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e6e5f3c13c2e",
+            "label": "instagram",
+            "name": "instagram",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e6e5f4513c2f",
+            "label": "youtube",
+            "name": "youtube",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -226,10 +350,10 @@
     "menu_order": 0,
     "position": "normal",
     "style": "default",
-    "label_placement": "top",
+    "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1580088357
+    "modified": 1584291731
 }
