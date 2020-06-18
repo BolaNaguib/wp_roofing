@@ -81,7 +81,7 @@
 }
 
 .xsx {
-  background-color: rgb(9, 46, 68);
+  background-color: rgb(9, 46, 68) !important;
   padding: 10px;
   top: 52px !important;
 }
@@ -93,7 +93,7 @@
   display: inline-block !important;
   &::before {
     content: "";
-    background: #068daf;
+    background: #068daf !important;
     height: 2px;
     width: 0;
     position: absolute;
